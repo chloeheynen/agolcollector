@@ -6,6 +6,7 @@
 
    <title>Data Collector for AGOL</title>
 
+
    <style>
     html,
     body,
@@ -15,6 +16,26 @@
      height: 100%;
      width: 100%;
     }
+    //Add record button for survey
+    .addRecordBtn {
+    position: "bottom-left";
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+    background-color: #0079c1;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+    .addRecordBtn:hover {
+    background-color: #005a87;
+    }
+
    </style>
 
    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
@@ -70,8 +91,9 @@
   </head>
   <body>
 
+    <a href="https://survey123.arcgis.com/share/5b932b77c3fb49c29f0d885938675112"target="_blank" class="addRecordBtn">Add Record</a>
+
    <div id="viewDiv"></div>
 
   </body>
 </html>
-
